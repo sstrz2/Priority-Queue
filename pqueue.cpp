@@ -1,4 +1,3 @@
-// #include "pq.h"
 #include <stdlib.h>
 
 #include <algorithm>
@@ -39,13 +38,10 @@ class pqueue {
 
    public:
     /**
-     * TODO
      * CONSTRUCTOR
      * Parameters: capacity - self-explanatory
      *             min_heap - if true (really non-zero), then it is a min-heap
      *                        if false, then a max-heap
-     *
-     *
      */
 
     pqueue(int capacity, bool min_heap = true) {
@@ -56,7 +52,6 @@ class pqueue {
     }
 
     /**
-     * TODO
      * Destructor
      * Desc: deallocates all memory associated with passed priority
      *       queue.
@@ -71,7 +66,6 @@ class pqueue {
     }
 
     /**
-     * TODO
      * Function: insert
      * Parameters: id of entry to insert
      *             priority of entry to insert
@@ -79,8 +73,6 @@ class pqueue {
      *          fails if id is out of range or
      *            there is already an entry for id
      *          succeeds otherwise.
-     *
-     * Desc: self-explanatory
      *
      * Runtime:  O(log n)
      *
@@ -135,7 +127,6 @@ class pqueue {
     }
 
     /**
-     * TODO
      * Function: change_priority
      * Parameters: element id
      *             new_priority
@@ -268,7 +259,6 @@ class pqueue {
     }
 
     /**
-     * TODO
      * Function: remove_by_id
      * Parameters: element id
      * Returns: true on success; false on failure
@@ -302,7 +292,6 @@ class pqueue {
     }
 
     /**
-     * TODO
      * Function: get_priority
      * Parameters: elment id
      *             reference double priority ("out" param)
@@ -322,7 +311,6 @@ class pqueue {
     }
 
     /**
-     * TODO
      * Function: delete_top
      * Parameters: reference int id and ref priority ("out" parameters)
      * Returns: true on success; false on failure (empty priority queue)
@@ -331,11 +319,7 @@ class pqueue {
      *       The "top" element will be either min or max (wrt priority)
      *       depending on how the priority queue was configured.
      *
-     *       If queue is empty, 0 is returned.
-     *
      * Runtime:  O(log n)
-     *
-     *
      */
     bool delete_top(int &id, double &priority) {
         if (firstEmpty == 1) {
@@ -348,7 +332,6 @@ class pqueue {
     }
 
     /**
-     * TODO
      * Function: peek_top
      * Parameters: reference int id and ref priority ("out" parameters)
      * Returns: true on success; false on failure (empty priority queue)
@@ -356,11 +339,6 @@ class pqueue {
      *       element (id and priority) is stored in *id and *priority;
      *       The "top" element will be either min or max (wrt priority)
      *       depending on how the priority queue was configured.
-     *
-     *       The priority queue itself is unchanged (contrast with
-     *       delete_top).!
-     *
-     *       If queue is empty, 0 is returned.
      *
      * Runtime:  O(1)
      *
@@ -375,10 +353,8 @@ class pqueue {
     }
 
     /**
-     * TODO
      * Function:  capacity
      * Returns: capacity of priority queue (as set on creation)
-     * Desc: see returns
      *
      * Runtime:   O(1)
      *
@@ -388,10 +364,8 @@ class pqueue {
     }
 
     /**
-     * TODO
      * Function: size
      * Returns: number of elements currently in queue
-     * Desc: see above
      *
      * Runtime:  O(1)
      */
